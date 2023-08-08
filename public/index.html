@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poll app</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-[#f5f5f5]">
+    
+    <form action="#" oninput="functsubmit(this)">
+        <div class="bg-white rounded-[12px] w-100 max-w-[500px] h-[40px] overflow-hidden shadow m-[10px] relative"><span class="z-[10] relative leading-[2.4rem] ml-[15px] font-[600]"> <input type="radio" name="vote"> hamd</span><span class="w-[50%] bg-[#84e495] h-[100%] absolute top-0 left-0"></span><span>0</span></div>
+        <div class="bg-white rounded-[12px] w-100 max-w-[500px] h-[40px] overflow-hidden shadow m-[10px] relative"><span class="z-[10] relative leading-[2.4rem] ml-[15px] font-[600]"> <input type="radio" name="vote"> karan</span><span class="w-[50%] bg-[#84e495] h-[100%] absolute top-0 left-0"></span><span>0</span></div>
+        <div class="bg-white rounded-[12px] w-100 max-w-[500px] h-[40px] overflow-hidden shadow m-[10px] relative"><span class="z-[10] relative leading-[2.4rem] ml-[15px] font-[600]"> <input type="radio" name="vote"> sir Inzamam</span><span class="w-[50%] bg-[#84e495] h-[100%] absolute top-0 left-0"></span><span>0</span></div>
+    </form>
+    <script>
+
+        const pollAnswers = document.querySelectorAll("form div")
+
+        pollAnswers.forEach((answer)=>{
+
+            answer.addEventListener("click" ,function(){
+
+                answer.querySelector("input").click()
+                 
+            })
+        })
+        // let buttonsDIv = document.querySelector(".buttons")
+        // document.getElementById("add").addEventListener("click",function (params) {
+        //     params.preventDefault()
+
+        //     let newnode = document.createElement("div");
+        //     newnode.innerHTML = ` <label   class="text-[#828ba2] text-[14px] block mb-[3px]" for="">Option2*</label>
+        //     <input type="text" class=" bg-[#eff2f9] py-[10px] w-[100%] px-[16px] mb-[40px] rounded-[6px] outline-none options">`
+        //     document.querySelector("form").insertBefore(newnode , buttonsDIv)
+        // })
+
+        // let submit = document.getElementById("submit");
+        // async function functsubmit(e){
+
+        //     const question = document.getElementById("question").value;
+        //     const options = Array.from(document.querySelectorAll(".options")).map(option => option.value);
+        //     const id = Math.floor(Math.random() *10000)
+                
+
+        //         let pollDiv = document.createElement("div")
+                    
+
+        //         const poll = `<div class='poll-divs' style="background-color:blue; height:60px; width:300px;margin:10px;" >${options[i]} <input type="radio" name="selectedpoll"><div>`
+
+        //             for( let i = 0;i< options.length;  i++){
+
+        //                     pollDiv.classList = 'pollmaindiv'
+        //              pollDiv.innerHTML += poll;
+                     
+        //             }
+                    
+        //             console.log(options)
+        //             document.querySelector("form").appendChild(pollDiv)
+
+                    
+        //         const res = await fetch("/" , {
+        //             method:"POST",
+        //             "headers":{
+        //                 "Contest-type": "application/json"
+        //             },
+        //             "body": JSON.stringify({
+        //                 id,
+        //                 question,
+        //                 options
+        //             })
+
+        //         })
+
+                   
+        //     }
+            // document.querySelector('.pollmaindiv').addEventListener("change",
+            // function(){
+            //     const allPolls = document.querySelectorAll(".poll-divs");
+
+            
+              
+            // })
+            // // allPolls.forEach((eachPoll)=>{
+
+                    //     eachPoll.addEventListener("click", function(){
+
+                    //             console.log(eachPoll)
+                    //     })
+                    // })
+    </script>
+</body>
+</html>
